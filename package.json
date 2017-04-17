@@ -1,0 +1,26 @@
+{
+  "name": "glitch-image-tag",
+  "version": "1.0.0",
+  "description": "glitch an <img> tag",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcwhittemore/glitch-img-tag.git"
+  },
+  "keywords": [
+    "glitch",
+    "html",
+    "img",
+    "byte",
+    "swap"
+  ],
+  "author": "Matthew Chase Whittemore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcwhittemore/glitch-img-tag/issues"
+  },
+  "homepage": "https://github.com/mcwhittemore/glitch-img-tag#readme"
+}

@@ -27,4 +27,9 @@ div.appendChild(img);
 
 **url** is a url to an image.
 
-**opts** is a config.
+**opts** is a config which will be pass directly to [byebyte](https://github.com/wayspurrchen/byebyte).
+- **opts.command** must be either `destroy` or `shuffle`.
+- **opts.annimate** (optional). A boolean for if the image should be continually reglitched on annimation frame. Default is true.
+- please consult `byebyte` for command specific options
+
+
