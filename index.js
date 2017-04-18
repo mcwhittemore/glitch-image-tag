@@ -3,7 +3,7 @@ var Buffer = require('buffer/').Buffer;
 
 module.exports = function(url, opts) {
   opts = opts || { command: 'destroy', min: .3, max: .8 };
-  opts.annimate = opts.annimate === undefined ? true : opts.annimate;
+  opts.animate = opts.animate === undefined ? true : opts.animate;
 
   var real = document.createElement('img');
   real.crossOrigin = 'Anonymous';
@@ -37,7 +37,7 @@ function process(img, canvas, ctx, opts) {
         ctx.drawImage(broken, 0, 0);
         canvas.toBlob(function(blob) {
           var url = URL.createObjectURL(blob);
-          if (img.parentElement !== null && opts.annimate) {
+          if (img.parentElement !== null && opts.animate) {
             img.src = url;
             requestAnimationFrame(function() {
               process(img, canvas, ctx);
