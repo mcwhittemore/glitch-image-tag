@@ -4,7 +4,8 @@
   "description": "glitch an <img> tag",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify docs/index.js -o docs/app.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/mcwhittemore/glitch-img-tag/issues"
   },
-  "homepage": "https://github.com/mcwhittemore/glitch-img-tag#readme"
+  "homepage": "https://github.com/mcwhittemore/glitch-img-tag#readme",
+  "dependencies": {
+    "buffer": "^5.0.6",
+    "byebyte": "^1.2.1"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0"
+  }
 }
