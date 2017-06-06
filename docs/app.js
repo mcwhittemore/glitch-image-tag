@@ -49,7 +49,7 @@ function process(img, canvas, ctx, opts) {
           if (img.parentElement !== null && opts.animate) {
             img.src = url;
             requestAnimationFrame(function() {
-              process(img, canvas, ctx);
+              process(img, canvas, ctx, opts);
             });
           }
         });
