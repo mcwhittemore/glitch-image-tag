@@ -1,4 +1,4 @@
-# GlitchImage
+# Glitch Image Tag 
 
 Creates an `<img>` that has been glitched.
 
