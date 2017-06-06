@@ -4,7 +4,7 @@ Creates an `<img>` that has been glitched.
 
 ## Install
 
-`npm install glitch-img-tag --save`
+`npm install glitch-image-tag --save`
 
 ## Usage
 
@@ -13,7 +13,7 @@ Creates an `<img>` that has been glitched.
 ```
 
 ```js
-var GlitchImage = require('glitch-img-tag');
+var GlitchImage = require('glitch-image-tag');
 
 var img = new GlitchImage('https://www.instagram.com/p/BEm1yKquZqk/media/?size=m')
 
