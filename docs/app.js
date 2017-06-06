@@ -1,7 +1,7 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var GlitchImage = require('../');
 
-var img = new GlitchImage('https://www.instagram.com/p/BEm1yKquZqk/media/?size=m')
+var img = new GlitchImage('trump.jpg')
 
 var div = document.getElementById('main');
 div.appendChild(img);
@@ -12,7 +12,7 @@ var Buffer = require('buffer/').Buffer;
 
 module.exports = function(url, opts) {
   opts = opts || { command: 'destroy', min: .3, max: .8 };
-  opts.annimate = opts.annimate === undefined ? true : opts.annimate;
+  opts.animate = opts.animate === undefined ? true : opts.animate;
 
   var real = document.createElement('img');
   real.crossOrigin = 'Anonymous';
@@ -46,7 +46,7 @@ function process(img, canvas, ctx, opts) {
         ctx.drawImage(broken, 0, 0);
         canvas.toBlob(function(blob) {
           var url = URL.createObjectURL(blob);
-          if (img.parentElement !== null && opts.annimate) {
+          if (img.parentElement !== null && opts.animate) {
             img.src = url;
             requestAnimationFrame(function() {
               process(img, canvas, ctx);
