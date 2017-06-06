@@ -32,4 +32,13 @@ div.appendChild(img);
 - **opts.animate** (optional). A boolean for if the image should be continually reglitched on animation frame. Default is true.
 - please consult `byebyte` for command specific options
 
+#### Default Opts
 
+```js
+{ 
+  command: 'destroy',
+  min: .3,
+  max: .8,
+  animate: true
+}
+```
