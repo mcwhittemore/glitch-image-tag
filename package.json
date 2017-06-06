@@ -19,7 +19,7 @@
     "swap"
   ],
   "author": "Matthew Chase Whittemore",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mcwhittemore/glitch-img-tag/issues"
   },
@@ -30,5 +30,8 @@
   },
   "devDependencies": {
     "browserify": "^14.4.0"
+  },
+  "directories": {
+    "doc": "docs"
   }
 }
